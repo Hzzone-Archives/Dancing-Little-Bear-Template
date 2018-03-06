@@ -9,8 +9,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>登录</title>
     <link rel="stylesheet" href="css/mobile_accounts.css">
-    <link rel="stylesheet" type="text/css" href="css/mobile.dialog.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="css/mobile.dialog.css"></head>
   
   <body>
     <div class="wrapper">
@@ -48,42 +47,40 @@
             <a class="btn open-app">下载App</a></div>
         </div>
       </div>
-    <div id="more-login-dialog" class="dui-dialog more-login-dialog" style="visibility: hidden; top: 198px; left: 18px; width: 339px; position: fixed;">
-      <span class="dui-dialog-shd" style="width: 339px; height: 255px;"></span>
-      <div class="dui-dialog-content">
-        <a class="j_close_dialog dui-dialog-close" id="my_a" onclick="document.getElementById("more-login-dialog").style.visibility="hidden";">X</a>
-        <div class="hd">
-          <h3></h3>
+      <div id="more-login-dialog" class="dui-dialog more-login-dialog" style="visibility: hidden; top: 198px; left: 18px; width: 339px; position: fixed;">
+        <span class="dui-dialog-shd" style="width: 339px; height: 255px;"></span>
+        <div class="dui-dialog-content">
+          <a class="j_close_dialog dui-dialog-close" id="my_a" onclick="document.getElementById(" more-login-dialog ").style.visibility="hidden ";">X</a>
+          <div class="hd">
+            <h3></h3>
+          </div>
+          <div class="bd" style="height: auto; overflow: visible;">
+            <a target="_top" href="#" class="item">用微博登录</a>
+            <a target="_top" href="#" class="item">用微信登录</a>
+            <a href="#" class="item">用手机验证码登录</a>
+            <a href="#" class="item">找回密码</a></div>
         </div>
-        <div class="bd" style="height: auto; overflow: visible;">
-          <a target="_top" href="#" class="item">用微博登录</a>
-          <a target="_top" href="#" class="item">用微信登录</a>
-          <a href="#" class="item">用手机验证码登录</a>
-          <a href="#" class="item">找回密码</a></div>
       </div>
-    </div>
-    <div class="dui-dialog-msk"></div>
-    <script type="text/javascript">
-      var divM = document.getElementById("my_div");
-      var divA = document.getElementById("my_a");
-      var hh_dialog = document.getElementById("more-login-dialog");
-      var openpwd_button = document.getElementById("openpwd_button");
-      var password_window = document.getElementById("form_password");
-      divM.onclick = function() {
-        hh_dialog.style.visibility = "visible";
-      }
-      divA.onclick = function() {
-        hh_dialog.style.visibility = "hidden";
-      }
-      openpwd_button.onclick = function() {
-        var input_form_type = password_window.getAttribute("type");
-        if(input_form_type=="password"){
-          password_window.setAttribute("type","text");
-        } else{
-          password_window.setAttribute("type","password");
+      <div class="dui-dialog-msk"></div>
+      <script type="text/javascript">var divM = document.getElementById("my_div");
+        var divA = document.getElementById("my_a");
+        var hh_dialog = document.getElementById("more-login-dialog");
+        var openpwd_button = document.getElementById("openpwd_button");
+        var password_window = document.getElementById("form_password");
+        divM.onclick = function() {
+          hh_dialog.style.visibility = "visible";
         }
-      }
-    </script>
+        divA.onclick = function() {
+          hh_dialog.style.visibility = "hidden";
+        }
+        openpwd_button.onclick = function() {
+          var input_form_type = password_window.getAttribute("type");
+          if (input_form_type == "password") {
+            password_window.setAttribute("type", "text");
+          } else {
+            password_window.setAttribute("type", "password");
+          }
+        }</script>
   </body>
 
 </html>
